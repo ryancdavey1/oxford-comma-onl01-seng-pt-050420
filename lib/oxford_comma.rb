@@ -1,6 +1,6 @@
 def oxford_comma(array)
   new_array = []
   array!.map.with_index do|word, i|
-    word 
+    i == array.length - 1 ? new_array << "and " + word : new_array << word + ", "
   end
 end
